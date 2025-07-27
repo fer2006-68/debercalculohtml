@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Resolución de Derivadas Paso a Paso</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f6fc;
+      color: #333;
+      padding: 20px;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    h1 {
+      color: #004080;
+      text-align: center;
+    }
+
+    .derivada {
+      background-color: #d9eaff;
+      padding: 15px;
+      border-left: 5px solid #0077cc;
+      margin-bottom: 20px;
+    }
+
+    .paso {
+      background-color: #fff4e6;
+      padding: 10px;
+      margin: 10px 0;
+      border-left: 4px solid #ffa31a;
+    }
+
+    .resultado {
+      background-color: #e6ffea;
+      padding: 15px;
+      border-left: 5px solid #33cc33;
+      font-weight: bold;
+      font-size: 18px;
+    }
+
+    .etiqueta {
+      font-weight: bold;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Resolución Paso a Paso de Derivadas</h1>
+
+  <div class="derivada">
+    <span class="etiqueta">Función original:</span>  
+    <br>f(x) = <span style="color: #0040ff;">3x² + 5x - 7</span>
+  </div>
+
+  <div class="paso">
+    <span class="etiqueta">Paso 1:</span> Identificamos los términos.<br>
+    - 3x² (término cuadrático)<br>
+    - 5x (término lineal)<br>
+    - -7 (constante)
+  </div>
+
+  <div class="paso">
+    <span class="etiqueta">Paso 2:</span> Aplicamos la regla de la potencia:  
+    <br>d/dx[xⁿ] = n·xⁿ⁻¹
+  </div>
+
+  <div class="paso">
+    <span class="etiqueta">Paso 3:</span> Derivamos cada término:<br>
+    - d/dx[3x²] = 3 × 2x¹ = 6x<br>
+    - d/dx[5x] = 5<br>
+    - d/dx[-7] = 0 (las constantes desaparecen)
+  </div>
+
+  <div class="resultado">
+    <span class="etiqueta">Resultado final:</span><br>
+    f'(x) = <span style="color: #009933;">6x + 5</span>
+  </div>
+
+</body>
+</html>
